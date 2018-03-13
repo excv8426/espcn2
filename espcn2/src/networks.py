@@ -1,5 +1,7 @@
 import tensorflow as tf
 import numpy as np
+import traceback
+import logging
 
 def _get_weights(config):
   weights={
@@ -41,9 +43,9 @@ def PS(config,X, r):
   # Main OP that you can arbitrarily use in you tensorflow code
   Xc = tf.split(X, 3, 3)
   if config.is_train:
-      X = tf.concat([_phase_shift(config,x, r) for x in Xc], 3) # Do the concat RGB
+    X = tf.concat([_phase_shift(config,x, r) for x in Xc], 3) # Do the concat RGB
   else:
-      X = tf.concat([_phase_shift_test(x, r) for x in Xc], 3) # Do the concat RGB
+    X = tf.concat([_phase_shift_test(x, r) for x in Xc], 3) # Do the concat RGB
   return X
 
 

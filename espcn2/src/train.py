@@ -15,9 +15,9 @@ tf.app.flags.DEFINE_integer("c_dim", 3, "The size of channel")
 tf.app.flags.DEFINE_integer("batch_size", 128, "the size of batch")
 #tf.app.flags.DEFINE_string("test_img", "C:\\image_path\\1343240909729.jpg", "test_img")
 tf.app.flags.DEFINE_float("learning_rate", 1e-5 , "The learning rate")
-tf.app.flags.DEFINE_string("checkpoint_dir", "C:\\Users\\Administrator\\pyworkspace\\espcn2\\checkpoint", "Name of checkpoint directory")
-tf.app.flags.DEFINE_string("inputdata", 'C:\\Users\\Administrator\\pyworkspace\\espcn2\\outdata\\sr-data.tfrecord', "outdata")
-
+tf.app.flags.DEFINE_string("checkpoint_dir", "C:\\Users\\Administrator\\git\\espcn2\\espcn2\\checkpoint", "Name of checkpoint directory")
+tf.app.flags.DEFINE_string("inputdata", 'C:\\Users\\Administrator\\git\\espcn2\\espcn2\\outdata\\sr-data.tfrecord', "outdata")
+#789544
 def main(_):
   with tf.Session() as sess:
     
