@@ -1,5 +1,3 @@
-A subpixel convnet for super resolution with Tensorflow
+基于subpixel的超分辨率。
 
-##References 
-
-* https://github.com/kweisamx/TensorFlow-ESPCN
+参考： https://github.com/kweisamx/TensorFlow-ESPCN
